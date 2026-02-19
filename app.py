@@ -53,7 +53,7 @@ st.title('Projeto Água Viva - Monitoramento')
 menu = st.sidebar.selectbox('Menu', ['Cadastro', 'Ver Mapa', 'Gerenciar Registros'])
 
 if menu == 'Cadastro':
-    st.header('Cadastro de Monitoramento de Água')
+    st.header('Parâmetros de Qualidade da Água')
     with st.form('formulario'):
         ponto = st.text_input("Local (endereço completo)")
         ph = st.text_input("pH", max_chars=10)
@@ -133,3 +133,6 @@ elif menu == 'Gerenciar Registros':
                         st.rerun()
                     else:
                         st.error("ID não encontrado na lista de registros.")
+st.divider()
+st.subheader('Desenv.: Massaki de O. Igarashi - Versão 0_Fev/26')
+st.sidebar.subheader('Desenvolvido por: Massaki de O. Igarashi - Versão 0_Fev/26')
