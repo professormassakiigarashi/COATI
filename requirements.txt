@@ -1,0 +1,7 @@
+streamlit
+pandas
+googlemaps
+folium
+streamlit-folium
+toml
+ipywidgets
