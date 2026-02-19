@@ -55,7 +55,7 @@ menu = st.sidebar.selectbox('Menu', ['Cadastro', 'Ver Mapa', 'Gerenciar Registro
 if menu == 'Cadastro':
     st.header('Parâmetros de Qualidade da Água')
     with st.form('formulario'):
-        ponto = st.text_input("Local (endereço completo)")
+        ponto = st.text_input("Local (endereço completo)", "Rua Inácio Santa Maria, 145, Bosque dos Pinheirinhos, Jundiaí-SP, Brazil")
         ph = st.text_input("pH", max_chars=10)
         od = st.text_input("OD (mg/L)", max_chars=10)
         qualidade = st.selectbox("Qualidade da Água", ['Boa', 'Regular', 'Péssima'])
